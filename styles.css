@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header{
+    background-color: #222222;
+    width: 100%;
+}
+
+.search-bar-container{
+    /* background-color: lightgray; */
+    display: flex;
+
+    width: 95%;
+    padding: 2%;
+    margin: 3%;
+    border-radius: 3rem;
+    border: 2px solid white;
+    box-shadow: 0px 4px 15px lightgray;
+    justify-content: space-between;
+    align-items: center;
+    /* border-color: pink; */
+}
+.search-input{
+    font-family: montserrat;
+    width: 80%;
+    border: none;
+    font-size: 1.8vh;
+    opacity: 90%;
+}
+
+#header-search-icon{
+    background-color: #B2D235;
+    padding: 10px;
+    border-radius: 5rem;
+}
+
+@media(max-width: 1024px){
+    .menu-button{
+        display: flex; 
+        flex-direction: column; 
+        gap: 0.5vh;
+        border: none;
+        background: transparent;
+        /* border: 20px; */
+    }
+    .header-burger-button{
+        width: 2vh;
+        height: 0.2vh;
+        background-color: white;    
+    }
+
+    #header-logo{
+        width: 10vh;
+        position: absolute;
+        left: 50%;    
+        transform: translateX(-50%);
+    }
+    #header-nav{
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+        position: relative;
+        padding: 3vh;
+    }
+
+    #header-left-anchors, #header-right-anchors{
+        display: none;
+    }
+    h1{
+        font-size: 2.25rem;
+        margin: 20px;
+        margin-top: 2.5rem;
+    }
+}
+
+@media(min-width: 1025px){
+    .menu-button{
+        display: none;
+    }
+
+    #header-logo{
+        position: static;
+        transform: none;
+        width: 20vh;
+        margin-left: 1.25rem;
+    }
+
+    #header-nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #header-left-anchors, #header-right-anchors{
+        display:flex;
+        color: white;
+    }
+    #header-left-anchors{
+        gap: 2rem;
+        margin-right: auto;
+        margin-left: 1.25rem;
+        /* align-self: left; */
+    }
+    #header-right-anchors{
+        align-items: center;
+        gap: 1.25rem;
+        margin: 1.25rem;
+    }
+
+    #anchor-join-now{
+        padding: 0.5rem 1.5rem;
+        border-radius: 3rem;
+        background-color: #B2D235 ;
+        /* border: 20px; */
+    }
+}
