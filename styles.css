@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body{
@@ -13,6 +15,7 @@ header{
     background-color: #222222;
     width: 100%;
 }
+
 
 .search-bar-container{
     /* background-color: lightgray; */
@@ -26,14 +29,16 @@ header{
     box-shadow: 0px 4px 15px lightgray;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 6%;
+    margin-top: 6%;
     /* border-color: pink; */
 }
 .search-input{
-    font-family: montserrat;
     width: 80%;
     border: none;
-    font-size: 1.8vh;
+    font-size: 0.8rem;
     opacity: 90%;
+    outline: none;
 }
 
 #header-search-icon{
@@ -75,7 +80,7 @@ header{
         display: none;
     }
     h1{
-        font-size: 2.25rem;
+        font-size: 1.8rem;
         margin: 20px;
         margin-top: 2.5rem;
     }
@@ -89,7 +94,7 @@ header{
     #header-logo{
         position: static;
         transform: none;
-        width: 20vh;
+        width: 15vh;
         margin-left: 1.25rem;
     }
 
@@ -101,12 +106,12 @@ header{
     #header-left-anchors, #header-right-anchors{
         display:flex;
         color: white;
+        font-size: 1.2rem;
     }
     #header-left-anchors{
         gap: 2rem;
         margin-right: auto;
-        margin-left: 1.25rem;
-        /* align-self: left; */
+        margin-left: 2.5rem;
     }
     #header-right-anchors{
         align-items: center;
@@ -118,6 +123,5 @@ header{
         padding: 0.5rem 1.5rem;
         border-radius: 3rem;
         background-color: #B2D235 ;
-        /* border: 20px; */
     }
 }
