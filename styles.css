@@ -20,7 +20,6 @@ header{
 .search-bar-container{
     /* background-color: lightgray; */
     display: flex;
-
     width: 95%;
     padding: 2%;
     margin: 3%;
@@ -45,6 +44,105 @@ header{
     background-color: #B2D235;
     padding: 10px;
     border-radius: 5rem;
+}
+
+/* featured listing section */
+
+#featured-listing-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#222222
+
+}
+
+h2{
+    margin-top: 1rem;
+}
+
+#cards{
+    margin-top: 2rem;
+}
+
+#card-visuals{
+    display: flex;
+    position: relative;
+    width: fit-content;
+    /* margin: 0 auto; */
+}
+
+.featured-listing-card{
+    display: block;
+    max-width: 100%;
+}
+
+.badge-new{
+    background-color: #FE5D26;
+    position: absolute;
+    margin: 3.5% 5.5%;
+    /* margin-left: %; */
+    padding: 0.2rem 0.8rem;
+    border-radius: 0.25rem;
+    color:white;
+    font-size: 0.6rem;
+}
+
+.card-seller-picture{
+    position: absolute;
+    bottom: 4%;
+    right: 1%;
+    /* object-fit: cover; */
+}
+
+.apartment-name{
+    color: #222222;
+    font-size: 1.15rem;
+}
+
+.card-description{
+    display: flex;
+    justify-content: space-between;
+    color:#222222;
+    /* align-content: center; */
+}
+#location-icon-card-description{
+    margin-right: 0.4rem;
+    transform: translateY(0.1rem);
+}
+
+.apartment-distance{
+    opacity: 50.5%;
+    font-size: 0.8rem;
+    margin: 0.2rem;
+    margin-right: 1rem;
+}
+
+.apartment-direction{
+    opacity: 50.5%;
+    font-size: 0.875rem;
+}
+#price-divisor{
+    margin-top: 0.5rem;
+    /* width: 20rem; */
+    
+}
+
+.card-icons{
+    margin-top: 0.5rem;;
+    display: flex;
+    gap: 1rem;
+}
+
+.faded-text{
+    color: #222222;
+    opacity: 50%;
+}
+
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    /* align-items:start; */
+    justify-content: end;
 }
 
 @media(max-width: 1024px){
