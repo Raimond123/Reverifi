@@ -375,6 +375,71 @@ h2{
     margin-top: 1.5rem;
 }
 
+/* --- Claim Your Address Section --- */
+#claim-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.claim-img-mobile {
+    width: 100%; 
+    height: auto;
+    display: block;
+}
+
+.claim-img-desktop {
+    display: none; 
+}
+
+/* --- CTA / JOIN US SECTION --- */
+#cta-section {
+    background-color: #B2D235;
+    width: 100%;
+    padding: 3rem 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.cta-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px; 
+}
+
+.cta-text {
+    color: #FFFFFF;
+    font-size: 1.8rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 0.6rem;
+    margin: 0;
+}
+
+.cta-logo {
+    height: 1.8rem; 
+    object-fit: contain;
+    transform: translateY(0.2rem); 
+}
+
+.btn-join-us {
+    background-color: #FFFFFF;
+    color: #222222;
+    border: none;
+    padding: 0.9rem 3.5rem;
+    border-radius: 3rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
 /* Mobile-tablet */
 @media(max-width: 1024px){
     .menu-button{
@@ -503,7 +568,21 @@ h2{
         display: block;
         width: 15rem;
     }
+
+    /* --- CLAIM SECTION (TABLET & DESKTOP) --- */
+    .claim-img-mobile {
+        display: none; 
+    }
+
+    .claim-img-desktop {
+        display: block; 
+        width: 100%;
+        height: auto;
+        max-height: 25rem; 
+        object-fit: cover; 
+    }
 }
+
 /* desktop */
 @media(min-width: 1025px){
     h1{
