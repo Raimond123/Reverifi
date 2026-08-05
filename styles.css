@@ -440,6 +440,123 @@ h2{
     cursor: pointer;
 }
 
+/* --- FOOTER --- */
+footer {
+    background-color: #FAFAFA; /* O blanco, según el fondo de tu diseño */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* 1. Redes Sociales */
+.footer-socials {
+    display: flex;
+    gap: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.footer-socials img {
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+/* 2. Contenedor Principal (Móvil: 1 Columna) */
+.footer-main {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 1200px;
+    gap: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+/* Columna 1: Brand */
+.footer-logo {
+    width: 8rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: #888888;
+    font-size: 0.95rem;
+}
+
+.contact-item img {
+    width: 1.2rem;
+}
+
+/* Columnas de Links */
+.footer-col h3 {
+    color: #B2D235;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.links-col a {
+    color: #666666;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+/* Columna Newsletter */
+.newsletter-form {
+    display: flex;
+    background-color: #FFFFFF;
+    border-radius: 3rem;
+    padding: 0.3rem;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 22rem;
+}
+
+.newsletter-form input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0.8rem 1rem;
+    font-size: 0.85rem;
+    color: #666666;
+}
+
+.newsletter-form button {
+    background-color: #B2D235;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 3rem;
+    padding: 0.8rem 1.8rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* 3. Franja Inferior Copyright */
+.footer-bottom {
+    background-color: #222222;
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+.footer-bottom p {
+    color: #FFFFFF;
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin: 0;
+}
+
 /* Mobile-tablet */
 @media(max-width: 1024px){
     .menu-button{
@@ -715,5 +832,17 @@ h2{
 
     .explore-dots {
         display: none;
+    }
+    /* --- FOOTER (DESKTOP) --- */
+    .footer-main {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr 1fr 1.5fr; 
+        gap: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 5rem;
+    }
+
+    .footer-col {
+        align-items: flex-start;
     }
 }
