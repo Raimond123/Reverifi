@@ -277,6 +277,62 @@ h2{
     /* margin-top: 1rem; */
 }
 
+/* network section */
+
+#network-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+#network-left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+#network-logo{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #222222;
+}
+
+.plus-sign{
+    color: #B2D235;
+}
+
+#network-description{
+    color: #222222;
+    opacity: 50%;
+    font-size: 1rem;
+    margin-top: 1rem;
+    max-width: 25rem;
+}
+
+#network-see-more{
+    background-color: #B2D235;
+    color: white;
+    border: none;
+    border-radius: 3rem;
+    padding: 0.9rem 2.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+#network-icons{
+    width: 100%;
+    max-width: 34.5rem;
+    height: auto;
+    margin-top: 3rem;
+}
+
 /* Mobile-tablet */
 @media(max-width: 1024px){
     .menu-button{
@@ -365,6 +421,32 @@ h2{
     .event-card:nth-child(2) .right-arrow{
         display: block;
     }
+
+    #network-section{
+        align-items: center;
+        padding: 3rem 20px;
+    }
+    #network-left{
+        align-items: center;
+        text-align: center;
+    }
+    #network-logo{
+        font-size: 2rem;
+    }
+    #network-description{
+        font-size: 1.15rem;
+        max-width: 32rem;
+    }
+    #network-see-more{
+        font-size: 1.1rem;
+        padding: 1rem 2.5rem;
+    }
+    #network-icons{
+        max-width: 44rem;
+        margin-top: 3.5rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
    
 }
 /* desktop */
@@ -452,5 +534,22 @@ h2{
 
     .event-card:last-child .right-arrow{
         display: block;
+    }
+
+    #network-section{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4rem 0;
+    }
+    #network-left{
+        width: 40%;
+        align-items: flex-start;
+        text-align: left;
+    }
+    #network-icons{
+        width: 55%;
+        max-width: 34.5rem;
+        margin-top: 0;
     }
 }
