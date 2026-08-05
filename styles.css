@@ -18,7 +18,6 @@ header{
 
 
 .search-bar-container{
-    /* background-color: lightgray; */
     display: flex;
     width: 95%;
     padding: 2%;
@@ -30,7 +29,7 @@ header{
     align-items: center;
     margin-bottom: 6%;
     margin-top: 6%;
-    /* border-color: pink; */
+
 }
 .search-input{
     width: 80%;
@@ -53,45 +52,64 @@ header{
     flex-direction: column;
     align-items: center;
     color:#222222
-
 }
 
 h2{
     margin-top: 1rem;
 }
 
-#cards{
+#cards {
     margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem; 
+    width: 90%; 
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#card-visuals{
-    display: flex;
+.card-visuals {
+    display: block; 
     position: relative;
-    width: fit-content;
-    /* margin: 0 auto; */
+    width: 100%; 
 }
 
-.featured-listing-card{
+.featured-listing-card {
     display: block;
-    max-width: 100%;
+    width: 100%; 
+    height: auto;
+    border-radius: 0.5rem;
 }
 
-.badge-new{
+.card-icons p {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.badge-new {
     background-color: #FE5D26;
     position: absolute;
-    margin: 3.5% 5.5%;
-    /* margin-left: %; */
+    top: 5%;   
+    left: 5%; 
     padding: 0.2rem 0.8rem;
     border-radius: 0.25rem;
-    color:white;
+    color: white;
     font-size: 0.6rem;
+    z-index: 2; 
 }
 
-.card-seller-picture{
+.card-seller-picture {
     position: absolute;
-    bottom: 4%;
-    right: 1%;
-    /* object-fit: cover; */
+    bottom: 2%; 
+    right: 3%;
+    width: 2.8rem;  
+    height: 2.8rem; 
+    border-radius: 50%;
+    border: 0.15rem solid white; 
+    object-fit: cover;
+    z-index: 2;
 }
 
 .apartment-name{
@@ -99,13 +117,14 @@ h2{
     font-size: 1.15rem;
 }
 
-.card-description{
+.card-description {
     display: flex;
     justify-content: space-between;
-    color:#222222;
-    /* align-content: center; */
+    align-items: center; 
+    color: #222222;
+    margin-top: 1rem; 
 }
-#location-icon-card-description{
+.location-icon-card-description {
     margin-right: 0.4rem;
     transform: translateY(0.1rem);
 }
@@ -121,10 +140,11 @@ h2{
     opacity: 50.5%;
     font-size: 0.875rem;
 }
-#price-divisor{
-    margin-top: 0.5rem;
-    /* width: 20rem; */
-    
+.price-divisor {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-top: 1px solid #E5E5E5; 
 }
 
 .card-icons{
@@ -138,13 +158,26 @@ h2{
     opacity: 50%;
 }
 
-.social-icons{
+.social-price-details {
     display: flex;
-    flex-direction: row;
-    /* align-items:start; */
-    justify-content: end;
+    justify-content: space-between; 
+    align-items: center;
 }
 
+.social-icons {
+    display: flex;
+    gap: 0.8rem;
+}
+.property-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    max-width: 25rem; 
+    margin: 0 auto; 
+}
+
+/* Mobile-tablet */
 @media(max-width: 1024px){
     .menu-button{
         display: flex; 
@@ -167,7 +200,6 @@ h2{
     }
     #header-nav{
         display: flex;
-        /* justify-content: space-between; */
         align-items: center;
         position: relative;
         padding: 3vh;
@@ -181,18 +213,16 @@ h2{
     }
     h1{
         font-size: 1.8rem;
-        /* margin: 20px; */
         margin: 1.25rem;
         margin-top: 2.5rem;
     }
     #search-bar-home-section{
         display: flex;
         flex-direction: column;
-        /* align-items: center; */
-        /* justify-content: center; */
     }
 }
 
+/* Tablet-desktop */
 @media (min-width: 760px){
     h1{
         font-size: 3.5rem;
@@ -203,7 +233,6 @@ h2{
         padding: 0px 20px;
 
         align-items: center;
-        /* justify-content: center; */
     }
     #home-illustration{
         width: 45rem;
@@ -211,8 +240,22 @@ h2{
     .search-input{
         font-size: 1.4rem;
     }
-}
 
+    .card-seller-picture {
+        width: 3.5rem; 
+        height: 3.5rem;
+    }
+    .apartment-name,
+    .social-price-details h3 {
+        font-size: 1.4rem;
+    }
+
+    .badge-new {
+        font-size: 0.8rem;
+        padding: 0.3rem 1rem;
+    }
+}
+/* desktop */
 @media(min-width: 1025px){
     h1{
         font-size: 2.5rem;
@@ -222,7 +265,6 @@ h2{
         display: flex;
         flex-direction: column;
         width: 60%;
-        /* align-items: center; */
     }
     #home-illustration{
         margin: 2%;
@@ -239,7 +281,6 @@ h2{
     }
 
     .search-bar-container{
-        /* background-color: lightgray; */
         padding: 2%;
         margin: 3%;
         border-radius: 3rem;
@@ -250,8 +291,6 @@ h2{
         margin-bottom: 3%;
         margin-top: 3%;
         width: 85%;
-
-        /* border-color: pink; */
     }
     .search-input{
         font-size: 1rem;
